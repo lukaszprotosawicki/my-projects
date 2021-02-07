@@ -1,0 +1,67 @@
+#start {
+    display: block;
+}
+
+#stop {
+    display: none;
+}
+
+button {
+    width: 100px;
+}
+
+#save {
+    display: none;
+}
+
+section h2  {
+    display: flex;
+    /* margin-right: 30px; */
+}
+
+section h2 div {
+    display: block;
+    /* margin-right: 30px; */
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    min-height: 300px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 3px 16px 2px black; 
+    box-shadow: 2px 3px 16px 2px black;
+    display: none;
+}
+#popup .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    padding: 20px;
+}
+#popup .wrapper input[type="text"] {
+    border: 2px solid #000000;
+}
+
+.active {
+    display: block !important;
+}
+
+#close_popup {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+#close_popup:hover {
+    cursor: pointer;
+    background-color: rgb(156, 147, 147);
+}
+
+.old_scores {
+    margin-left: 20px;
+}

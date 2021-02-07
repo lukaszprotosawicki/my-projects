@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBywMPW6BoDEyzF4dGd3SmqqdN6pWAGqog",
+        authDomain: "kursacademy-86379.firebaseapp.com",
+        projectId: "kursacademy-86379",
+        storageBucket: "kursacademy-86379.appspot.com",
+        messagingSenderId: "26346760554",
+        appId: "1:26346760554:web:9bd32ccc7dbbecc2c25d13"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      db.settings({ timestampInSnapshots: true })
+    </script>
+  </head>
+
+  <body class="bg-purple-300">
+    <main
+      class="container mx-auto mt-24 p-12 flex flex-col justify-center items-center rounded-lg shadow-2xl"
+      style="background-color: #3cdfea"
+    >
+      <h1 class="text-3xl font-bold font-sans text-indigo-600">Stopwatch</h1>
+
+      <h2 id="time" class="text-xl mt-8 font-bold font-sans text-indigo-600">0:00</h2>
+      <div class="flex mt-12">
+        <button 
+          id="start"
+          class="bg-pink-800 hover:bg-pink-00 px-4 py-2 rounded mr-4 text-xl font-sans font-bold text-yellow-200"
+        >
+          Start
+        </button>
+        <button 
+        id="stop"
+        class="bg-pink-800 hover:bg-pink-00 px-4 py-2 rounded mr-4 text-xl font-sans font-bold text-yellow-200"
+      >
+        Stop
+      </button>
+        <button 
+          id="next"
+          class="bg-pink-800 hover:bg-pink-00 px-4 py-2 rounded mr-4 text-xl font-sans font-bold text-yellow-200"
+        >
+          Next
+        </button>
+
+        <button 
+          id="pause"
+          class="bg-pink-800 hover:bg-pink-00 px-4 py-2 rounded mr-4 text-xl font-sans font-bold text-yellow-200"
+        >
+          Pause
+        </button>
+
+        <button 
+          id="reset"
+          class="bg-pink-800 hover:bg-pink-00 px-4 py-2 rounded mr-4 text-xl font-sans font-bold text-yellow-200"
+        >
+          Reset
+        </button>
+        <button 
+        id="save"
+        class="bg-pink-800 hover:bg-pink-00 px-4 py-2 rounded mr-4 text-xl font-sans font-bold text-yellow-200"
+      >
+        Save
+      </button>
+      </div>
+      <section class="mt-12">
+        <h2 class="text-xl font-bold font-sans text-indigo-600">
+          <div> Aktualne wyniki:           
+            <div id="scores">
+            </div>
+          </div> 
+          <div class="old_scores">Ostatnie wyniki :
+          <div id="oldscores"></div>
+        </div>
+        </h2>
+      </section>
+    </main>
+    <div id="popup">
+      <div class="wrapper">
+        <label>Wpisz nazwę wpisu</label>
+        <input type="text" id="post_name" />
+        <input type="button" value="Zapisz wyniki" id="close_popup" />
+       </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
