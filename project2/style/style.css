@@ -1,0 +1,398 @@
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: 0 auto;
+    width: 1040px;
+    padding: 0;
+    position: relative;
+    min-height: 100%;
+    background-color: rgb(212, 212, 212);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.topbar {
+    display: flex;
+    position: fixed;
+    background-color: rgb(231, 195, 195);
+    max-width: 1040px;
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    top: 0;
+    z-index: 1;
+}
+
+.topbarlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.topbar form {
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 2px;
+}
+
+.topbarbutton {
+    background-color: rgb(255, 0, 43);
+    color: white;
+    border: 0;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.topbarbutton:hover {
+    background-color: rgb(177, 5, 33);
+    transition: 0.5s;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.topbarsearch {
+    width: 300px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.btn-box {
+    order: 3;
+    display: flex;
+    align-content: center;
+}
+
+.buttonaccount {
+    display: block;
+}
+
+.buttonaccount a {
+    text-align: center;
+    margin-left: 20px;
+    border: 1px solid rgb(11, 163, 11);
+    background-color: rgb(11, 163, 11);
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.buttonaccount a:hover {
+    background-color: rgb(18, 107, 18);
+    transition: 0.5s;
+}
+
+.buttonshop, .buttonaccount {
+    display: flex;
+    align-items: center;
+}
+.buttonshop a {
+    text-align: center;
+    border: 1px solid white;
+    background-color: rgb(6, 119, 6);
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: rgb(6, 119, 6);
+    margin-left: 100px;
+}
+
+.buttonshop a:hover {
+    background-color: rgb(19, 175, 19);
+    transition: 0.5s;
+}
+
+.logo-box {
+    position: relative;
+    border-bottom: 5px solid blue;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 100%;
+    height: 300px;
+    
+}
+
+.header {
+    background-color: rgb(19, 26, 131);
+    position: relative;
+    top: -100px;
+    left: 100px;
+    width: calc(5 * 160px + 20px);
+}
+
+.box {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.box .wrapper {
+    max-width: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.box .wrapper img {
+    display: block;
+    width: 100%;
+}
+
+.wrapper:hover {
+    border: 1px solid white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 214, 18);
+    color: white;
+    border: 2px solid green;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: rgb(36, 153, 6);
+    transition: 0.5s;
+    color: white;
+}
+
+.footer {
+    width: 1040px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.footer > img {
+    z-index: -1;
+    max-height: 100%;
+    width: 1040px;
+    position: absolute;
+}
+
+.footer-fluid {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.col1 strong {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.col1 ul li {
+    margin: 0 10px;
+}
+.col1 ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.col2 strong {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.col2 ul li {
+    margin: 0 10px;
+}
+.col2 ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.col3 {
+    display: flex;
+    width: 30%;
+    height: 50px;
+    margin-left: auto;
+}
+
+.button-fb {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.button-fb img {
+    max-width: 100%;
+}
+
+.button-instagram {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.button-instagram img {
+    max-width: 100%;
+}
+
+.button-yt {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.button-yt img {
+    max-width: 60%;
+}
+
+.button-lk {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.button-lk img {
+    max-width: 60%;
+}
+
+
+@media( max-width: 1016px ) {
+    .topbar {
+        height: 90px;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+    }
+    
+    .topbar form {
+        margin-left: 0;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .topbarsearch {
+        height: 40px;
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .topbarlogo {
+        width: 30%;
+        justify-content: flex-start;
+    }
+
+    .btn-box {
+        width: 70%;
+        order: 2;
+        justify-content: flex-end;
+    }
+
+    .search-bar {
+        order: 3;
+        width: 100%;
+    }
+    
+}
+
+@media( max-width: 610px ) {
+    .topbar {
+        height: 126px;
+    }
+
+    .btn-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .topbarlogo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-bar {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .topbar form  {
+        width: 100%;
+    }
+
+    .buttonshop a, .buttonaccount a {
+        margin-left: 0;
+    }
+
+}
+
+@media( max-width: 900px) {
+    .header {
+        width: 63.5%;
+    }
+
+}
+@media( max-width: 740px) {
+    .header {
+        width: 48.1%;
+    }
+}
+
+@media( max-width: 570px) {
+    .header {
+        width: 32.7%;
+    }
+}
