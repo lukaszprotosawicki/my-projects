@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator dmg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bgc_img">
+        <header class="bgc">
+            <section class="bgc_skills">
+                <section class="character_skills">
+                    <div class="parameters">Parameters: 
+                        <div>1 Level = <span> 0.6 dmg </span></div>
+                        <div>1 Melee skill = <span> 1.4 dmg </span></div>
+                        <div>1 Weapon Attack = <span> 2.2 dmg </span></div>
+                    </div>
+                </section>
+                <h1>Damage calculator</h1>
+                <div class="panel_level">Level: 
+                    <div>
+                        <input type="text" name="level" id="level">
+                    </div>
+                </div>
+                <p></p>
+                <div class="panel_melee">Melee skill:
+                    <div>
+                        <input type="text" name="melee_skill" id="melee_skill">
+                    </div> +
+                    <div id="add_skill"> 0 
+                    </div>  
+                </div>
+                <p></p>
+                <div class="panel_weapon">Weapon Attack:
+                    <div>
+                        <input type="text" name="weapon_atk" id="weapon_atk">
+                    </div>
+                </div>
+                <p></p>
+                <div class="panel_rings">
+                    <div>
+                        <input type="checkbox" name="melee_ring" value="4" id="melee_ring" class="items"> (+4)
+                    </div>
+                    <div>
+                        <label for="melee_ring">
+                            <img src="img/ring_of_blue_plasma.gif" alt=""> 
+                            <img src="img/ring_of_green_plasma.gif" alt="">
+                            <img src="img/ring_of_red_plasma.gif" alt="">
+                        </label>
+                    </div>
+                </div>
+                <p></p>
+                <div class="panel_shield">
+                    <div>
+                        <input type="checkbox" name="shield" value="2" id="shield" class="items"> (+2)
+                    </div>
+                    <div>
+                        <label for="shield">
+                            <img src="img/soulbastion.gif" alt="">
+                        </label>
+                    </div>
+                </div>
+                <p></p>
+                <div class="panel_sword">
+                    <div>
+                        <input type="radio" name="melee_sword" value="0" id="melee_sword0" class="items">
+                    </div>
+                    <div>
+                        <label for="melee_sword0">Brak</label>
+                    </div>
+                </div>
+                <p></p>
+                <div class="panel_sword_content1">
+                    <div>
+                        <input type="radio" name="melee_sword" value="1" id="melee_sword1" class="items"> (+1)
+                    </div>
+                    <div>
+                        <label for="melee_sword1">
+                            <img src="img/chopper_of_destruction.gif" alt="">
+                            <img src="img/ornate_remedy_hammer.gif" alt="">
+                            <img src="img/slayer_of_destruction.gif" alt="">
+                        </label>
+                    </div>
+                </div>
+                <p></p>
+                <div class="panel_sword_content3">
+                    <div>
+                        <input type="radio" name="melee_sword" value="3" id="melee_sword3" class="items"> (+3)
+                    </div>
+                    <div>
+                        <label for="melee_sword3">
+                            <img src="img/souleater.gif" alt="">
+                            <img src="img/phantasmal_axe.gif" alt="">
+                        </label>
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <input type="button" value="Submit" id="submit" onclick="score_hit()" onclick="score_medium_hit()">
+                </div>
+            </section>
+        </header>
+        <head>
+            <div class="content_dmg">
+                <div>
+                    <span>Your best hits: </span>
+                    <div id="best_hit">0
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <span>Your medium hits: </span>
+                    <div id="medium_hit">0
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <span>Your minimum hits: </span>
+                    <div id="min_hit">0
+                    </div>
+                </div>
+            </div>
+        </head>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

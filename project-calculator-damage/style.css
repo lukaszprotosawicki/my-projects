@@ -1,0 +1,232 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+}
+
+body div {
+    display: inline-flex;
+}
+
+.bgc_img {
+    background-image: url(img/wallpaper.jpg);
+    height: 100vh;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.bgc {
+    background-color: rgba(243, 243, 243, 0.699);
+    width: 400px;
+    margin-top: 30px;
+    padding: 20px 0;
+    border: 2px solid black;
+    border-radius: 50px;
+    /* opacity: 0.7; */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.character_skills {
+    padding: 5px 20px;
+    margin: 0 auto;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.parameters {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.parameters div span {
+    color: red;
+    font-weight: bold;
+}
+
+#level {
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: rgb(173, 173, 173);
+    width: 25px;
+    margin-left: 65px;
+}
+
+#melee_skill {
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: rgb(173, 173, 173);
+    width: 25px;
+    margin-left: 30px;
+}
+
+#weapon_atk {
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: rgb(173, 173, 173);
+    width: 25px;
+    margin-left: 4px;
+}
+
+#melee_ring, 
+#melee_sword0,
+#melee_sword1,
+#melee_sword3,
+#shield {
+    cursor: pointer;
+}
+
+.panel_level,
+.panel_melee,
+.panel_weapon {
+    display: inline-flex;
+}
+
+.panel_melee {
+    margin-left: 27px;
+}
+
+.panel_level div {
+    margin-left: 10px;
+}
+
+.panel_melee div {
+    margin-left: 10px;
+}
+
+.panel_weapon div {
+    margin-left: 10px;
+}
+
+.panel_rings {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 200px;
+    align-items: center;
+}
+
+.panel_rings div {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.panel_rings div label img {
+    display: flex;
+    text-align: center;
+}
+
+.panel_shield {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 200px;
+    align-items: center;
+}
+
+.panel_shield div {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.panel_sword {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 200px;
+    align-items: center;
+}
+
+.panel_sword div {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.panel_sword div input {
+    display: block;
+}
+
+.panel_sword_content1 {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 200px;
+    align-items: center;
+}
+
+.panel_sword_content1 div {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.panel_sword_content1 label img {
+    display: flex;
+}
+
+.panel_sword_content3 {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 200px;
+    align-items: center;
+}
+
+.panel_sword_content3 div {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.panel_sword_content3 label img {
+    display: flex;
+}
+
+#submit {
+    border: 2px solid black;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.content_dmg {
+    display: inline-block;
+    background-color: rgba(243, 243, 243, 0.699);
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 140px;
+    width: 320px;
+    margin-top: 400px;
+    margin-left: 200px;
+}
+
+.content_dmg div {
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+#best_hit {
+    font-size: 24px;
+    color: red;
+}
+
+
+#medium_hit {
+    font-size: 24px;
+    color: red;
+}
+
+
+#min_hit {
+    font-size: 24px;
+    color: red;
+}
